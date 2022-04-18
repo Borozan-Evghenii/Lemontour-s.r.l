@@ -1,0 +1,36 @@
+.map-wrapper{
+    h2{
+        margin-bottom: 50px;
+    }
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    &-item{
+        padding: 30px;
+        height: 320px;
+        background-color: aqua;
+        border: 1px solid $default;
+        h3{
+            font-size: 32px;
+            font-weight: 500;
+            color: $white;
+        }
+        &_city{
+            display: flex;
+            gap: 10px;
+            .city-item{
+                padding: 5px 15px;
+                border-radius: 100px;
+                background-color: $white;
+            }
+            .city-text{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}

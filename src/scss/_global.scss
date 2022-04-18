@@ -2,8 +2,13 @@
 
 
 .container{
-    max-width: 1200px;
+    max-width: 1266px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+.section-grid{
+    display: grid;
+    grid-template-columns: 500px 1fr;
 }
 
 body{
@@ -12,11 +17,13 @@ body{
     position: relative;
     background-color: $bg;
     color: $default;
+    line-height: 1.5;
 }
 
 .h1,.h2{
     font-size: 36px;
     font-weight: 500;
+    max-width: 500px;
 }
 
 .h3{
@@ -38,18 +45,20 @@ body{
     font-size: 18px;
     font-weight: 500;
 }
-
-.regMed{
+p{
+    font-size: 16px;
+    font-weight: 500;
 
 }
 
-
-
+.section{
+    padding: 150px 0  0 0;
+}
 
 //Components
 button{
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     padding: 19px 28px;
     color: $white;
     background: $accent;

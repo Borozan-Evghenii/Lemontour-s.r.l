@@ -1,0 +1,22 @@
+.about{
+    background-color: $accent;
+    padding: 300px 0 150px 0;
+    color: $white;
+    .about-numbers{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
+        .number{
+            font-size: 48px;
+            font-weight: 200;
+        }
+        .descr{
+            font-size: 12px;
+            font-weight: normal;
+        }
+    }
+    .about-text{
+        font-weight: 400;;
+    }
+
+}

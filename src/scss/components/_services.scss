@@ -1,0 +1,51 @@
+.services{
+    &-card{
+        padding: 50px;
+        margin-bottom: 50px;
+        height: 280px;
+        display: flex;
+        color: $white;
+        flex-direction: column;
+        justify-content: space-between;
+        &_descr{
+            max-width: 400px;
+        }
+        .card-content{
+            
+        }
+        .whitebtn{
+            background-color: $white;
+            color: $default;
+            align-self: flex-end;
+            border: $white;
+        }
+    }
+    .people{
+        background-image:url('../../img/people.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .package{
+        background-image:url('../../img/pack.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.otherservice{
+    .service-item{
+        padding-bottom: 20px;
+        margin-top: 40px;
+        max-width: 630px;
+        border-bottom: 1px solid rgba($accent, 0.2);
+        &_name{
+            font-size: 18px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+        &_descr{
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 400px;
+        }
+    }
+}
