@@ -1,0 +1,20 @@
+
+//Global
+@import "mixins";
+@import "variables";
+@import "fonts";
+@import "global";
+@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/reset.css/reset.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
+
+//Components
+
+// @import "./components/header";
+
+
+// Media Querry
+@import "./media/laptoplarge"; //media querry for laptop
+@import "./media/laptop"; //media querry for laptop
+@import "./media/tablet"; //media querry for tablet
+@import "./media/mobile";//media querry for mobile
