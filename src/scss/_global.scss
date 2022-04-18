@@ -1,1 +1,64 @@
 // Add the global setting for Heading an Global Components
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    font-weight: normal;
+    position: relative;
+    background-color: $bg;
+    color: $default;
+}
+
+.h1,.h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.h4{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.h6{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.regMed{
+
+}
+
+
+
+
+//Components
+button{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 19px 28px;
+    color: $white;
+    background: $accent;
+    border: 1px solid $accent;
+    cursor: pointer;
+    translate: all 1s;
+    &:hover{
+        border: 1px solid $default;
+        color: $default;
+        background: transparent;
+    }
+}
