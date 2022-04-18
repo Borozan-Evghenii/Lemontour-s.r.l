@@ -1,5 +1,8 @@
 .services{
-    &-card{
+    &-content_card{
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 50px;
         margin-bottom: 50px;
         height: 280px;
@@ -7,45 +10,58 @@
         color: $white;
         flex-direction: column;
         justify-content: space-between;
-        &_descr{
-            max-width: 400px;
-        }
-        .card-content{
-            
-        }
-        .whitebtn{
-            background-color: $white;
-            color: $default;
-            align-self: flex-end;
-            border: $white;
-        }
     }
-    .people{
-        background-image:url('../../img/people.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+    .card{
+        &-content{
+            position: relative;
+            z-index: 10;
+        }
+        &-h3{
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        &-descr{
+            max-width: 500px;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+       
     }
-    .package{
-        background-image:url('../../img/pack.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+    .white{
+        background-color: $white;
+        position: relative;
+        z-index: 10;
+        color: $default;
+        border: $white;
+        display: flex;
+        align-self: flex-start;
     }
 }
-.otherservice{
-    .service-item{
+.other{
+    &-content-item{
+        border-bottom: 1px solid rgba(#18437B, 0.2);
+        max-width: 640px;
         padding-bottom: 20px;
         margin-top: 40px;
-        max-width: 630px;
-        border-bottom: 1px solid rgba($accent, 0.2);
-        &_name{
+        .item_name{
             font-size: 18px;
             font-weight: 500;
-            padding-bottom: 10px;
+            margin-bottom: 10px;
         }
-        &_descr{
+        .item_descr{
             font-size: 16px;
             font-weight: 400;
-            max-width: 400px;
+            line-height: 1.5;
+            min-width: 400px;
         }
     }
+}
+.overlay{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#18437B, 0.4);
 }

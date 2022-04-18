@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Lemontur S.R.L.</title>
 </head>
@@ -17,167 +17,131 @@
         <!-- Header -->
         <header>
     <div class="container">
-        <div class="nav-container">
+        <div class="header-container">
             <div class="nav-logo">
-                <p>Lemontur <span>s.r.l.</span></p>
+                <p class="logo">Lemontur <span>s.r.l.</span></p>
             </div>
-            <button>Contactează-ne</button>
+            <a class="button" href="#">Contactează-ne</a>
         </div>
     </div>
 </header>
         <!-- End Header -->
         <!-- Hero -->
-        <section class="hero">
-    <div class="container">
+        <section class="hero-section">
+    <div class="container grid">
         <div class="hero-content">
-            <div class="content">
-                <h1 class="h1">
-                    Transport de pasageri și colete Moldova - Germania
-                </h1>
-                <p class="descr">
-                    Oferim curse zilnice tur-retur spre orice destinație.
-                    La fel dispunem de serviciul "Colete și Pachete"
-                </p>
-            </div>
-            <!-- /.content -->
-            <div class="social">
-                <div class="social-links">
-                    <a href="" class="social-link">Facebook</a>
-                    <a href="" class="social-link">Viber</a>
-                    <a href="" class="social-link">Telegram</a>
-                    <a href="" class="social-link">WatsUp</a>
-                </div>
-                <!-- /.social-links -->
-            </div>
-            <!-- /.social -->
+            <h1 class="hero-content_h1">Transport de pasageri și colete Moldova - Germania</h1>
+            <p class="hero-content_descr">Oferim curse zilnice tur-retur spre orice destinație.
+                La fel dispunem de serviciul "Colete și Pachete"</p>
         </div>
-        <!-- /.hero-content -->
-        <div class="slider">
-            <img src="./img/bus-image.jpg" alt="">
+        <div class="hero-social_links">
+            <a href="#" class="social_link">Facebook</a>
+            <a href="#" class="social_link">Viber</a>
+            <a href="#" class="social_link">Telegram</a>
+            <a href="#" class="social_link">Whatsup</a>
         </div>
-        <!-- /.slider -->
     </div>
-    <!-- /.container -->
+    <div class="slider">
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="../img/bus-image.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/bus-image.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/bus-image.jpg" alt="">
+                </div>
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- /.hero -->
         <!-- End Hero -->
         <!-- about -->
-        <section class="about">
-    <div class="container">
-        <div class="section-grid about-content">
-            <div class="section-name about-content_name">
-                <h2 class="h2">Despre noi</h2>
-            </div>
-            <!-- /.name -->
-            <div class="about-content_content">
-                <p class="about-text">
-                    Efectuăm transportul de pasageri, colete, marfă din Moldova - Germania, Germania - Moldova. Deținem 
-                    transport confortabil, echipat la cele mai înalte standarde din domeniu,
-                    asigurîndu-vă astfel tot confortul de care aveți nevoie: aer conditionat, scaune rapatabile 
-                    și comode, sistem audio-video, încălzire suplimentară, loc generos pentru picioare, spații suficiente pentru
-                    bagaje și șoferi profesioniști cu mare experiență. 
-                </p>
-                <!-- /.about-text -->
-                <div class="about-numbers">
-                    <div class="about-number">
-                        <p class="number">15 000</p>
-                        <p class="descr">Kilometri în siguranță</p>
-                    </div>
-                    <div class="about-number">
-                        <p class="number">1200</p>
-                        <p class="descr">Pasageri</p>
-                    </div>
-                    <div class="about-number">
-                        <p class="number">300</p>
-                        <p class="descr">Rute efectuate</p>
-                    </div>
+        <section class="about about-section">
+    <div class="container grid">
+        <h2 class="about-section_h2">Despre noi</h2>
+        <div class="about-section-content">
+            <p class="about-section-content_text">
+                Efectuăm transportul de pasageri, colete, marfă din Moldova - Germania, Germania - Moldova. Deținem transport confortabil, echipat la cele mai înalte standarde din domeniu, asigurîndu-vă astfel tot confortul de care aveți nevoie: aer conditionat, scaune rapatabile și comode, sistem audio-video, încălzire suplimentară, loc generos pentru picioare, spații suficiente pentru bagaje și șoferi profesioniști cu mare experiență. 
+            </p>
+            <div class="about-section_numbers">
+                <div class="number-item">
+                    <p class="number">150000</p>
+                    <p class="number-descr">Kilometri în siguranță</p>
                 </div>
-                <!-- /.about-numbers -->
+                <div class="number-item">
+                    <p class="number">1200</p>
+                    <p class="number-descr">Pasageri</p>
+                </div>
+                <div class="number-item">
+                    <p class="number">300</p>
+                    <p class="number-descr">Curse efectuate</p>
+                </div>
             </div>
-            <!-- /.about-content_content -->
         </div>
-        <!-- /.content -->
     </div>
-    <!-- /.container -->
 </section>
-<!-- /.about -->
         <!-- End about -->
         <!-- services -->
-        <section class="section services">
-    <div class="container">
-        <div class="section-grid">
-            <div class="section-name">
-                <h2 class="h2">Servicii</h2>
-            </div>
-            <!-- /.section-name -->
-            <div class="services-content">
-                <div class="services-card people">
-                    <div class="card-content">
-                        <h3 class="services-card_name h3">Transport persoane</h3>
-                        <h6 class="services-card_descr">Transportăm persoane zilnic tur - retur pe traseul Moldova - Germania.</h6>
-                    </div>
-                    <!-- /.card-content -->
-                    <div class="card-button">
-                        <button class="whitebtn">Contactează-ne</button>
-                    </div>
+        <section class="services section">
+    <div class="container grid">
+        <h2 class="services_h2">Servicii</h2>
+        <div class="services-content">
+            <div class="services-content_card" style="background-image: url('./img/people.jpg');">
+                <div class="overlay"></div>
+                <div class="card-content">
+                    <h3 class="card-h3">Transport persoane</h3>
+                    <p class="card-descr">Transportăm persoane zilnic tur - retur pe traseul Moldova - Germania.</p>
                 </div>
-                <!-- /.services-card -->
-                <div class="services-card package">
-                    <div class="card-content">
-                        <h3 class="services-card_name h3">Transport Colete</h3>
-                        <h6 class="services-card_descr">Prestăm și servicii de livrare a coletelor pentru traseul Moldova - Germania.</h6>
-                    </div>
-                    <!-- /.card-content -->
-                    <div class="card-button">
-                        <button class="whitebtn">Contactează-ne</button>
-                    </div>
-                </div>
-                <!-- /.services-card -->
+                <a href="#" class="button white">Contactază-ne</a>
             </div>
-            <!-- /.services-content -->
+            <div class="services-content_card" style="background-image: url('./img/pack.jpg');">
+                <div class="overlay"></div>
+                <div class="card-content">
+                    <h3 class="card-h3">Transport colete</h3>
+                    <p class="card-descr">Transportăm colete zilnic tur - retur pe traseul Moldova - Germania.</p>
+                </div>
+                <a href="#" class="button white">Contactază-ne</a>
+            </div>
         </div>
-        <!-- /.section-grid -->
     </div>
-    <!-- /.container -->
 </section>
-<!-- /.services -->
-<section class="section otherservice">
-    <div class="container">
-        <div class="section-grid">
-            <div class="section-name">
-                <h2 class="h2">Alte servicii</h2>
+<section class="section other">
+    <div class="container grid">
+        <h2 class="other_h2">Alte servicii</h2>
+        <div class="other-content">
+            <div class="other-content-item">
+                <p class="item_name">Suport non-stop</p>
+                <p class="item_descr">Operatorii vă vor consulta cu privire la orice întrebare apărută înaintea sau în momentul efecturăii cursei.</p>
             </div>
-            <!-- /.section-name -->
-            <div class="otherservice-content">
-                <div class="service-item">
-                    <h6 class="service-item_name">Suport non-stop</h6>
-                    <p class="service-item_descr">Operatorii vă vor consulta cu privire la orice întrebare apărută înaintea sau în momentul efecturăii cursei.</p>
-                </div>
-                <!-- /.service-item -->
-                <div class="service-item">
-                    <h6 class="service-item_name">Automobil modern</h6>
-                    <p class="service-item_descr">Automobilele cu care se efectuează cursele sunt amenajate cu toate cele necesare pentru a avea o călătorie plăcută și sigură</p>
-                </div>
-                <!-- /.service-item -->
-                <div class="service-item">
-                    <h6 class="service-item_name">Contacte</h6>
-                    <p class="service-item_descr">Suntem dispuși să contactăm cu clienții noștri prin orice platformă care le este mai disponibilă</p>
-                </div>
-                <!-- /.service-item -->
+            <div class="other-content-item">
+                <p class="item_name">Automobil modern</p>
+                <p class="item_descr">Automobilele cu care se efectuează cursele sunt amenajate cu toate cele necesare pentru a avea o călătorie plăcută și sigură</p>
             </div>
-            <!-- /.otherservice-content -->
+            <div class="other-content-item">
+                <p class="item_name">Contact</p>
+                <p class="item_descr">Suntem dispuși să contactăm cu clienții noștri prin orice platformă care le este mai disponibilă</p>
+            </div>
         </div>
-        <!-- /.section-grid -->
     </div>
-    <!-- /.container -->
 </section>
-<!-- /.section -->
         <!-- End services -->
         <!-- Road -->
-        <section class="section road">
+        <section class="section route">
     <div class="container">
-        <div class="map-wrapper">
-            <h2 class="h2">Traseu</h2>
+        <div class="route-map">
+            <h2 class="route_h2">Traseu</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d6783488.529409495!2d12.589487046214812!3d49.54585450897843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x40c97c3628b769a1%3A0x258119acdf53accb!2z0JzQvtC70LTQsNCy0LjRjw!3m2!1d47.411631!2d28.369885!4m5!1s0x479a721ec2b1be6b%3A0x75e85d6b8e91e55b!2z0JPQtdGA0LzQsNC90LjRjw!3m2!1d51.165690999999995!2d10.451526!5e0!3m2!1sru!2s!4v1650277714694!5m2!1sru!2s" width="100%" height="650px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!-- /.map-wrapper -->
@@ -185,101 +149,101 @@
     <!-- /.container -->
 </section>
 <!-- /.road -->
-<section class="section">
+<section class="section traveled">
     <div class="container">
-        <div class="road-section">
-            <h2 class="h2 road-heading">Orașele parcurse</h2>
-            <p class="durata">23h-30h Într-o direcție</p>
+        <div class="traveled-heading">
+            <h2 class="traveled-heading_h2">Orașele parcurse</h2>
+            <h6 class="traveled-heading_h6">Durata: 23h-30h</h6>
         </div>
-        <div class="city-wrapper">
-            <div class="city-item" style="background-image: url('./img/md.jpg');"> 
-                <h6 class="city-item_name">Moldova</h6>
-                <div class="cityes">
-                    <div class="cityes-item">
-                        <p class="city-text">Chișinău</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Bălți</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Cahul</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Chișinău</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Bălți</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Cahul</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Chișinău</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Bălți</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Cahul</p>
-                    </div>
+        <div class="traveled-country">
+            <div class="country-card" style="background-image: url(./img/md.jpg);">
+                <div class="overlay"></div>
+                <h5 class="country-card_h5">Moldova</h5>
+                <div class="country-card_city">
+                    <p class="country-card_city_text">Chișinău</p>
+                    <p class="country-card_city_text">Bălți</p>
                 </div>
             </div>
-            <div class="city-item" style="background-image: url('./img/ro.jpg');">
-                <h6 class="city-item_name">România</h6>
-                <div class="cityes">
-                    <div class="cityes-item">
-                        <p class="city-text">Chișinău</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Bălți</p>
-                    </div>
-                    <div class="cityes-item">
-                        <p class="city-text">Cahul</p>
-                    </div>
+            <div class="country-card" style="background-image: url(./img/ro.jpg);">
+                <div class="overlay"></div>
+                <h5 class="country-card_h5">România</h5>
+                <div class="country-card_city">
+                    <p class="country-card_city_text">Husi</p>
+                    <p class="country-card_city_text">Vaslui</p>
+                    <p class="country-card_city_text">Bârlad</p>
+                    <p class="country-card_city_text">Adjud</p>
+                    <p class="country-card_city_text">Onesti</p>
+                    <p class="country-card_city_text">Târgu</p>
+                    <p class="country-card_city_text">Secuesc</p>
+                    <p class="country-card_city_text">Brașov</p>
+                    <p class="country-card_city_text">Fagaraș</p>
+                    <p class="country-card_city_text">Sibiu</p>
+                    <p class="country-card_city_text">Sebes</p>
+                    <p class="country-card_city_text">Deva</p>
+                    <p class="country-card_city_text">Arad</p>
                 </div>
             </div>
-            <div class="city-item" style="background-image: url('./img/ung.jpg');">
-                <h6 class="city-item_name">Ungaria</h6>
-                <div class="cityes">
-                    <div class="cityes-item">
-                        <p class="city-text">Chișinău</p>
-                    </div>
+            <div class="country-card" style="background-image: url(./img/ung.jpg);">
+                <div class="overlay"></div>
+                <h5 class="country-card_h5">Ungaria</h5>
+                <div class="country-card_city">
+                    <p class="country-card_city_text">Chișinău</p>
+                    <p class="country-card_city_text">Bălți</p>
                 </div>
             </div>
-            <div class="city-item" style="background-image: url('./img/austr.jpg');">
-                <h6 class="city-item_name">Austria</h6>
-                <div class="cityes">
-                    <div class="cityes-item">
-                        <p class="city-text">Chișinău</p>
-                    </div>
+            <div class="country-card" style="background-image: url(./img/austr.jpg);">
+                <div class="overlay"></div>
+                <h5 class="country-card_h5">Austria</h5>
+                <div class="country-card_city">
+                    <p class="country-card_city_text">Venlo</p>
+                    <p class="country-card_city_text">Eindhoven</p>
+                    <p class="country-card_city_text">Tilburg</p>
+                    <p class="country-card_city_text">Tiel</p>
+                    <p class="country-card_city_text">Nijmengen</p>
+                    <p class="country-card_city_text">Vlaardingen</p>
+                    <p class="country-card_city_text">Rotterdam</p>
+                    <p class="country-card_city_text">Breda</p>
+                    <p class="country-card_city_text">Utrech</p>
                 </div>
             </div>
-            <div class="city-item" style="background-image: url('./img/ge.jpg');">
-                <h6 class="city-item_name">Germania</h6>
-                <div class="cityes">
-                    <div class="cityes-item">
-                        <p class="city-text">Chișinău</p>
-                    </div>
+            <div class="country-card" style="background-image: url(./img/ge.jpg);">
+                <div class="overlay"></div>
+                <h5 class="country-card_h5">Germania</h5>
+                <div class="country-card_city">
+                    <p class="country-card_city_text">Pforzheim</p>
+                    <p class="country-card_city_text">Karlsruhe</p>
+                    <p class="country-card_city_text">Mannheim</p>
+                    <p class="country-card_city_text">Regensburg</p>
+                    <p class="country-card_city_text">Nurinberg</p>
+                    <p class="country-card_city_text">Wusburg</p>
+                    <p class="country-card_city_text">Bochum</p>
+                    <p class="country-card_city_text">Frankfurt pe Main</p>
+                    <p class="country-card_city_text">Wiesbaden</p>
+                    <p class="country-card_city_text">Mainz</p>
+                    <p class="country-card_city_text">Koblenz</p>
+                    <p class="country-card_city_text">Koln</p>
+                    <p class="country-card_city_text">Dusseldorf</p>
+                    <p class="country-card_city_text">Wuppertal</p>
+                    <p class="country-card_city_text">Krefel</p>
+                    <p class="country-card_city_text">Duisburg</p>
+                    <p class="country-card_city_text">Essen</p>
                 </div>
             </div>
         </div>
+
     </div>
-    <!-- /.container -->
 </section>
-<!-- /.section -->
         <!-- End Road -->
         <!-- FAQ -->
         <section class="faq-section section">
-    <div class="container">
-        <div class="section-grid">
-            <div class="section-name">
-                <h2 class="h2">Întrebări fregvente</h2>
-            </div>
-            
-        </div>
+    <div class="container grid">
+        
     </div>
 </section>
         <!-- End FAQ -->
+        <!-- footer -->
+        
+        <!-- End footer -->
         
     </div>
     

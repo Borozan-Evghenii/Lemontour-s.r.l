@@ -1,0 +1,51 @@
+.route-map{
+    h2{
+        margin-bottom: 50px;
+    }
+}
+
+.traveled{
+    &-heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &-country{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        .country-card{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            padding: 30px;
+            justify-content: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 380px;
+            &:last-child{
+                grid-column: 2/4;
+            }
+            &_h5{
+                margin-bottom: 20px;
+                color: $white;
+                position: relative;
+                z-index: 10;
+            }
+            &_city{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                position: relative;
+                z-index: 10;
+                &_text{
+                    color: $default;
+                    padding: 5px 15px;
+                    border-radius: 100px;
+                    background: $white;
+                }
+            }
+        }
+    }
+}

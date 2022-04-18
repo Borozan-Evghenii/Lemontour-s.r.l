@@ -2,53 +2,50 @@
 
 
 .container{
-    max-width: 1266px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
 }
-.section-grid{
+.grid{
     display: grid;
     grid-template-columns: 500px 1fr;
 }
 
-body{
+html{
     font-family: 'Jost', sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     position: relative;
     background-color: $bg;
     color: $default;
     line-height: 1.5;
+    font-size: 16px;
+
 }
 
-.h1,.h2{
+h1,h2{
     font-size: 36px;
     font-weight: 500;
     max-width: 500px;
 }
 
-.h3{
+h3{
     font-size: 32px;
     font-weight: 600;
 }
 
-.h4{
+h4{
     font-size: 32px;
     font-weight: 500;
 }
 
-.h5{
+h5{
     font-size: 20px;
     font-weight: 400;
 }
 
-.h6{
+h6{
     font-size: 18px;
     font-weight: 500;
-}
-p{
-    font-size: 16px;
-    font-weight: 500;
-
 }
 
 .section{
@@ -56,12 +53,14 @@ p{
 }
 
 //Components
-button{
+.button{
     font-size: 16px;
     font-weight: 400;
     padding: 19px 28px;
     color: $white;
+    text-decoration: none;
     background: $accent;
+    letter-spacing: 3%;
     border: 1px solid $accent;
     cursor: pointer;
     translate: all 1s;

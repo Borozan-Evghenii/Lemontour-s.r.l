@@ -2,21 +2,31 @@
     background-color: $accent;
     padding: 300px 0 150px 0;
     color: $white;
-    .about-numbers{
+    &-section-content_text{
+        line-height: 1.6;
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 640px;
+    }
+    .about-section_numbers{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 50px;
-        .number{
-            font-size: 48px;
-            font-weight: 200;
-        }
-        .descr{
-            font-size: 12px;
-            font-weight: normal;
+        .number-item{
+            .number{
+                font-size: 48px;
+                font-weight: 200;
+            }
+            .number-descr{
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 3%;
+            }
         }
     }
     .about-text{
-        font-weight: 400;;
+        font-weight: 400;
     }
 
 }

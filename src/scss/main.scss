@@ -2,7 +2,6 @@
 //Global
 @import "mixins";
 @import "variables";
-@import "fonts";
 @import "global";
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/reset.css/reset.css";
@@ -14,8 +13,8 @@
 @import "./components/hero";
 @import "./components/about";
 @import "./components/services";
-@import "./components/road";
-@import "./components/faq";
+@import "./components/route";
+// @import "./components/faq";
 
 
 // Media Querry
