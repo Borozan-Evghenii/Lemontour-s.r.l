@@ -1,32 +1,38 @@
 .about{
-    background-color: $accent;
-    padding: 300px 0 150px 0;
-    color: $white;
-    &-section-content_text{
-        line-height: 1.6;
-        font-size: 18px;
-        font-weight: 400;
-        max-width: 640px;
+    &-section{
+        padding-top: 250px;
+        padding-bottom: 150px;
+        background-color: $accent;
+        color: $white;
     }
-    .about-section_numbers{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 50px;
-        .number-item{
-            .number{
-                font-size: 48px;
-                font-weight: 200;
-            }
-            .number-descr{
-                margin-top: 10px;
-                font-size: 14px;
-                font-weight: 400;
-                letter-spacing: 3%;
+    &-container{
+
+    }
+    &-content{
+        max-width: 640px;
+        &_text{
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &_numbers{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .about-number{
+                display: flex;
+                flex-direction: column;
+                margin-top: 100px;
+                .number{
+                    font-size: 48px;
+                    font-weight: 200;
+                    line-height: 1;
+                }
+                .number-descr{
+                    font-size: 14px;
+                    font-weight: 300;
+                }
             }
         }
-    }
-    .about-text{
-        font-weight: 400;
     }
 
 }

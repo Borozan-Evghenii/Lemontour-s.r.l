@@ -2,7 +2,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: 1,
-    speed: 500,
+    loop: true,
   
   
     // Navigation arrows

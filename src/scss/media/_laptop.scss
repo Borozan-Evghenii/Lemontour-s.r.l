@@ -1,3 +1,15 @@
-@include laptop (720px){
-    
+//until 1024px
+@include laptop {
+    .heading{
+        width: 300px;
+    }
+    .hero-heading{
+        width: 500px;
+    }
+    //hero querry
+    .hero-social{
+        display: none;
+    }
+    //hero querry
+
 }

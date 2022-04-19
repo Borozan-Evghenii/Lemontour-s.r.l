@@ -1,5 +1,8 @@
 // Add the global setting for Heading an Global Components
-
+a{
+    text-decoration: none;
+    color: $default;
+}
 
 .container{
     max-width: 1240px;
@@ -11,7 +14,7 @@
     grid-template-columns: 500px 1fr;
 }
 
-html{
+body{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     position: relative;
@@ -22,8 +25,14 @@ html{
 
 }
 
-h1,h2{
-    font-size: 36px;
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 500px;
+}
+
+h2{
+    font-size: 28px;
     font-weight: 500;
     max-width: 500px;
 }
@@ -54,19 +63,28 @@ h6{
 
 //Components
 .button{
+    display: block;
     font-size: 16px;
     font-weight: 400;
-    padding: 19px 28px;
+    padding: 20px 30px;
     color: $white;
     text-decoration: none;
     background: $accent;
-    letter-spacing: 3%;
     border: 1px solid $accent;
     cursor: pointer;
-    translate: all 1s;
+    transition: all .5s ease-out ;
     &:hover{
         border: 1px solid $default;
         color: $default;
         background: transparent;
     }
+}
+
+.flex{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.heading{
+    width: 500px;
 }

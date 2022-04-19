@@ -1,32 +1,32 @@
 .hero-section{
-    margin-top: 200px;
-    margin-bottom: -100px;
-    .hero-content{
-        &_h1{
-            margin-bottom: 30px;
-            line-height: 1.5;
-        }
-        &_descr{
-            max-width: 360px;
-            line-height: 1.5;
-        }
-    }
-    .hero-social_links{
-        display: flex;
-        justify-content: end;
+    margin-top: 150px;
+    .hero-container{
+        justify-content: space-between;
         align-items: flex-end;
-        .social_link{
-            margin-left: 50px;
-            text-decoration: none;
-            color: $default;
-            font-size: 20px;
-            font-weight: 500;
+        .hero{
+            &-heading{
+                &_h1{
+                    margin-bottom: 50px;
+                }
+                &_descr{
+                    max-width: 450px;
+                }
+            }
+            &-social{
+                &_links{
+                    .hero-social_link{
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-left: 50px;
+                    }
+                }
+            }
         }
     }
-    .slider{
-        margin-top: 50px;
-        .swiper {
-            width: 100%;
-          }
-    }
+
 }
+.hero-slider{
+    margin-top: 50px;
+    margin-bottom: -100px;
+}
+
