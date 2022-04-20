@@ -1,7 +1,7 @@
 //until 1024px
 @include laptop {
     .heading{
-        width: 300px;
+        flex-basis: 300px;
     }
     .hero-heading{
         width: 500px;
@@ -11,5 +11,10 @@
         display: none;
     }
     //hero querry
+    .grid{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+    
 
 }

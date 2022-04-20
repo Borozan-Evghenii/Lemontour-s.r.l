@@ -1,14 +1,42 @@
 .services{
     &-content{
         max-width: 600px;
+        flex: 1 0 600px;
         &_card{
+            width: 100%;
+            flex-basis: 382px;
+            color: $white;
             padding: 50px;
             display: flex;
+            position: relative;
             flex-direction: column;
             justify-content: space-between;
-            height: 380px;
+            height: 280px;
+            margin-bottom: 50px;
             background-size: cover;
             background-repeat: no-repeat;
+            .card-heading{
+                z-index: 10;
+                &_h3{
+                    font-weight: 500;
+                }
+                &_descr{
+                    max-width: 400px;
+                }
+
+            }
+            .card-button{
+                z-index: 10;
+            }
         }
     }
+    &-container{
+        
+    }
+}
+.btn-white{
+    display: inline-block;
+    background: $white;
+    color: $default;
+    border: none;
 }
