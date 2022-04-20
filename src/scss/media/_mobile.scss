@@ -8,11 +8,14 @@
 
 
     .section{
-        padding: 50px 0  0 0;
+        padding: 100px 0  0 0;
     }
 
     body{
         font-size: 14px;
+    }
+    h2{
+        font-size: 24px;
     }
     
     
@@ -66,11 +69,11 @@
     .services{
         &-content{
             &_card{
-                padding: 30px 10px;
-                height: 50vh;
+                padding: 30px 20px;
+                height: 55vh;
                 .card-heading{
                     &_h3{
-                        font-size: 28px;
+                        font-size: 25px;
                         font-weight: 600;
                         margin-bottom: 10px;
                     }
@@ -91,12 +94,61 @@
     .traveled{
         &-content{
             grid-template-columns:  1fr;
+            grid-auto-rows: min-content;
             &_item{
+                padding: 30px 20px;
+                min-height: 280px;
                 &:last-child{
                     grid-column: auto;
                 }
+                &__h3{
+                    font-size: 24px;
+                }
+                &__city{
+                    
+                    &__item{
+                        font-size: 12px;
+                    }
+                }
             }
             
+        }
+    }
+
+    //footer
+    .footer{
+        padding-bottom: 100px;
+        &-content{
+            &_number{
+                &__number{
+                    font-size: 32px;
+                }
+            }
+            &_social{
+                margin-bottom: 50px;
+                &__descr{
+                    font-weight: 300;
+                }
+                &__items{
+                    &__item{
+                        display: inline-block;
+                        color: $white;
+                        font-size: 20px;
+                        margin-right: 50px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .developer{
+                opacity: 0.4;
+                font-weight: 400;
+                a{
+                    padding: 0 2px;
+                    color: $white;
+                    text-decoration: underline;
+    
+                }
+            }
         }
     }
 

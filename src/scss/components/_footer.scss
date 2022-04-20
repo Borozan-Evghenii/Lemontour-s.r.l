@@ -2,6 +2,15 @@
     padding-bottom: 150px;
     color: $white;
     background-color: $accent;
+    &-logo{
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        .logo-descr{
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
     &-content{
         &_number{
             margin-bottom: 50px;
@@ -10,6 +19,7 @@
             }
             &__number{
                 font-size: 40px;
+                text-decoration: underline;
                 font-weight: 300;
                 color: $white;
                 margin-top: 10px;
