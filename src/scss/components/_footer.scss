@@ -1,0 +1,44 @@
+.footer{
+    padding-bottom: 150px;
+    color: $white;
+    background-color: $accent;
+    &-content{
+        &_number{
+            margin-bottom: 50px;
+            &__descr{
+                font-weight: 300;
+            }
+            &__number{
+                font-size: 40px;
+                font-weight: 300;
+                color: $white;
+                margin-top: 10px;
+            }
+
+        }
+        &_social{
+            margin-bottom: 50px;
+            &__descr{
+                font-weight: 300;
+            }
+            &__items{
+                margin-top: 10px;
+                &__item{
+                    color: $white;
+                    font-size: 20px;
+                    margin-right: 50px;
+                }
+            }
+        }
+        .developer{
+            opacity: 0.4;
+            font-weight: 400;
+            a{
+                padding: 0 2px;
+                color: $white;
+                text-decoration: underline;
+
+            }
+        }
+    }
+}

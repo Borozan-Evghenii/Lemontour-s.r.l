@@ -1,4 +1,8 @@
 .header{
+    position: sticky;
+    top: -1px;
+    left: 0;
+    z-index: 11;
     background: $bg;
     padding: 20px 0 ;
     &-container{

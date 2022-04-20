@@ -80,15 +80,7 @@ h6{
     }
 }
 
-.flex{
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex: 1 0 auto;
-}
-.heading{
-    flex-basis: 500px;
-}
+
 
 .overlay{
     position: absolute;
@@ -102,5 +94,5 @@ h6{
 
 .grid{
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 36vw  1fr;
 }

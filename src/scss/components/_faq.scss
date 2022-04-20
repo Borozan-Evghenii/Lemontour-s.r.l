@@ -1,0 +1,26 @@
+.faq{
+    margin-bottom: 150px;
+    &-content{
+        &_dropdown{
+            max-width: 640px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba($accent, 0.4);
+            &[open] img{
+                transform: rotate(180deg);
+            }
+            &__control{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                cursor: pointer;
+                padding: 20px 0;
+                &[open] img{
+                    transform: rotate(180deg);
+                }
+            }
+            &__text{
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

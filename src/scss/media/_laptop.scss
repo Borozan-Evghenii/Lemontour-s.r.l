@@ -16,5 +16,17 @@
         grid-template-columns: 300px 1fr;
     }
     
+    
+    .traveled{
+        &-content{
+            grid-template-columns: repeat(2, 1fr);
+            &_item{
+                &:last-child{
+                    grid-column: 1/3;
+                }
+            }
+            
+        }
+    }
 
 }

@@ -12,4 +12,17 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .traveled{
+        &-content{
+            grid-template-columns:  1fr;
+            &_item{
+                &:last-child{
+                    grid-column: auto;
+                }
+            }
+            
+        }
+    }
+    
 }

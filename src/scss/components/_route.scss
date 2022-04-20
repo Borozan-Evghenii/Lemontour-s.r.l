@@ -1,0 +1,51 @@
+.route{
+    &-heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+.traveled{
+    &-heading{
+        margin-bottom: 50px;
+    }
+    &-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        grid-auto-flow: row;
+        grid-auto-rows: 380px;
+        &_item{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            color: $white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 30px;
+            &:last-child{
+                grid-column: 2/4;
+            }
+            &__h3{
+                position: inherit;
+                z-index: 10;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            &__city{
+                display: flex;
+                gap: 10px;
+                position: inherit;
+                z-index: 10;
+                &__item{
+                    padding: 5px 15px;
+                    background: $white;
+                    color: $default;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+}
