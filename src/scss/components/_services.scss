@@ -34,7 +34,12 @@
     display: inline-block;
     background: $white;
     color: $default;
-    border: none;
+    border: 1px solid $white;
+    &:hover{
+        color: $white;
+        border: 1px solid $white;
+        background: transparent;
+    }
 }
 
 

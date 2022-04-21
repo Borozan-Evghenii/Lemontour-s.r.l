@@ -72,7 +72,7 @@ h6{
     background: $accent;
     border: 1px solid $accent;
     cursor: pointer;
-    transition: all .5s ease-out ;
+    outline:none;
     &:hover{
         border: 1px solid $default;
         color: $default;
@@ -95,4 +95,47 @@ h6{
 .grid{
     display: grid;
     grid-template-columns: 36vw  1fr;
+}
+
+.link{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        height: 2px;
+        width: 0;
+        background-color: $default;
+        transition: width 0.25s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            transition: width 0.25s;
+        }
+    }
+}
+.footer{
+    &_link{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            height: 2px;
+            width: 0;
+            background-color: $white;
+            transition: width 0.25s;
+        }
+        &:hover{
+            &::before{
+                width: 100%;
+                transition: width 0.25s;
+            }
+        }
+    }
 }
