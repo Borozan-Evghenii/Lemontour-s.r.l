@@ -1,0 +1,60 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 12;
+    background-color: rgba($accent, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    &-window{
+        min-width: 320px;
+        background-color: $bg;
+        padding: 20px 20px;
+        cursor: default;
+        &_control{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &__closed{
+                padding: 17px 21px;
+                background-color: $accent;
+                color: $white;
+                border: none;
+                cursor: pointer;
+                align-self: flex-end;
+                &_item{
+                    display: block;
+                }
+            }
+            &__heading{
+                max-width: 200px;
+            }
+        }
+        &_social{
+            margin-top: 50px;
+            &__link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px 31px;
+                border: 0.5px solid $default;
+                margin-bottom: 20px;
+                font-size: 24px;
+                font-weight: 500;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+}
+
+.modal-visible{
+    display: flex;
+}

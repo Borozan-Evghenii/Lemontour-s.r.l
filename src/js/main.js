@@ -14,4 +14,24 @@ const swiper = new Swiper('.swiper', {
         delay: 2000,
     },
   
+});
+
+
+
+
+//modal
+
+const btn = document.querySelectorAll('.button');
+const modal = document.querySelector('.modal');
+const closed =document.querySelector('.modal-window_control__closed')
+
+btn.forEach((el) =>{
+  el.addEventListener('click', (e) =>{
+    let path = e.currentTarget.getAttribute('data-path');
+    modal.classList.add('modal-visible')
   });
+});
+
+closed.addEventListener('click', (e)=> {
+  modal.classList.remove('modal-visible')
+});

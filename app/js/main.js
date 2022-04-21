@@ -1,2 +1,2 @@
-new Swiper(".swiper",{slidesPerView:1,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},autoplay:{delay:2e3}});
+(()=>{new Swiper(".swiper",{slidesPerView:1,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},autoplay:{delay:2e3}});var e=document.querySelectorAll(".button"),t=document.querySelector(".modal"),o=document.querySelector(".modal-window_control__closed");e.forEach((function(e){e.addEventListener("click",(function(e){e.currentTarget.getAttribute("data-path"),t.classList.add("modal-visible")}))})),o.addEventListener("click",(function(e){t.classList.remove("modal-visible")}))})();
 //# sourceMappingURL=main.js.map
