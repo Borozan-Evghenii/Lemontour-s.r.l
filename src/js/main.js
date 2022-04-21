@@ -3,6 +3,9 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: 1,
     loop: true,
+    zoom: {
+      maxRatio: 5,
+    },
   
   
     // Navigation arrows

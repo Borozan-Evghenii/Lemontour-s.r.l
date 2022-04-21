@@ -30,5 +30,14 @@
 .hero-slider{
     margin-top: 50px;
     margin-bottom: -100px;
+    .swiper{
+        height: 550px;
+        img{
+            height: -webkit-fill-available;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+    }
 }
 
